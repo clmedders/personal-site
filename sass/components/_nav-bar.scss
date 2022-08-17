@@ -53,25 +53,25 @@
 }
 
 .navbar-logo{
-  width: 30px;
+  width: 50px;
   height: auto;
-  display: flex;
+  // display: flex;
 }
 
-// .navbar-menu{
-//   display: none;
+.navbar-menu{
+  display: none;
 
-//   &.open-menu{
-//     display: flex;
-//   }
-// }
+  &.open-menu{
+    display: flex;
+  }
+}
 
 .hamburger-menu{
   color: white;
   // font-family: Silkscreen;
-  padding-left: 200px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  // padding-left: 200px;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
 
   @media(min-width:$tablet){
     display: none;

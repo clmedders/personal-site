@@ -1,20 +1,54 @@
 .hero{
   background: $grey;
+
+}
+
+.hero-inner{
   width: 100%;
   padding-left: 70px;
   padding-right: 70px;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  @media(min-width:$tablet){
+    flex-direction: row;
+  }
+}
+
+.hero-text{
+  max-width: 100%;
+  width: 500px;
 
   h1{
     font-family: Silkscreen;
+
+    @media(min-width:$tablet){
+      font-size: 32px;
+    }
+
+    @media(min-width:$laptop){
+      font-size: 38px;
+    }
   }
 
   p{
     font-family: sans-serif;
 
+    @media(min-width:$tablet){
+      font-size: 18px;
+    }
+
+    @media(min-width:$laptop){
+      font-size: 20px;
+    }
   }
+
+  @media(min-width:$tablet){
+    padding-top: 100px;
+   }
 }
 
 // .hero-pic-outer{
@@ -26,12 +60,20 @@
 
 .hero-pic{
   max-width: 100%;
-  width: 400px;
+  width: 300px;
   height: auto;
   margin: auto;
   border-radius: 100%;
   object-fit: cover;
   padding-top: 20px;
+
+  @media(min-width:$tablet){
+   padding-left: 30px;
+  }
+
+  @media(min-width:$laptop){
+    margin-right: 100px;
+   }
 }
 
 .hero-button{
