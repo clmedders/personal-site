@@ -1,8 +1,5 @@
 .navbar{
   background-color: $purple;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .navbar-content{
@@ -12,11 +9,20 @@
   font-family: Silkscreen;
   display: flex;
   flex-direction: column;
-  justify-content: center ;
+  justify-content: center;
+
+  @media(min-width:$tablet){
+    flex-direction: row-reverse;
+  }
 
   @media(min-width:$laptop){
     font-size: 24px;
   }
+}
+
+.navbar-list{
+  padding-left: 0;
+  text-align: center;
 
   ul{
     flex-direction: column;
@@ -39,23 +45,23 @@
 
 }
 
-.navbar-list{
-  padding-left: 0;
-  text-align: center;
-
-}
-
 .navbar-right{
-  flex-direction: column;
+  flex-direction: row;
   display: flex;
-  width: 100%;
-
+  width: 200px;
+  max-width: 100%;
 }
 
 .navbar-logo{
-  width: 50px;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.navbar-logo-item{
+  width: 30px;
   height: auto;
-  // display: flex;
+
 }
 
 .navbar-menu{
@@ -64,23 +70,23 @@
   &.open-menu{
     display: flex;
   }
+
+  @media(min-width:$tablet){
+    flex-direction: row;
+    display: flex;
+  }
 }
 
 .hamburger-menu{
   color: white;
-  // font-family: Silkscreen;
-  // padding-left: 200px;
-  // padding-top: 10px;
-  // padding-bottom: 10px;
+  padding-left: 100px;
+  padding-top: 30px;
 
   @media(min-width:$tablet){
     display: none;
   }
 }
 
-// &.container{
-//   padding: 0 15px;
-// }
 
 
 
