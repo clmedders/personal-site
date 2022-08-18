@@ -6,7 +6,8 @@
   color: white;
   width: 100%;
   font-size: 18px;
-  font-family: Silkscreen;
+  // font-family: Silkscreen;
+  font-family: Electrolize;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,24 +24,34 @@
 .navbar-list{
   padding-left: 0;
   text-align: center;
+  font-size: 18px;
+
+  @media(min-width:$tablet){
+  width: 500px;
+  padding-left: 20px
+  }
 
   ul{
     flex-direction: column;
     display: flex;
     width: 100%;
+    padding-left: 50px;
 
     @media(min-width:$tablet){
       flex-direction: row;
+      padding-left: 0px;
     }
   }
 
   li{
-    margin: .5rem 0 .5rem .5rem;
+    margin: .75rem 0 .75rem .75rem;
+    // letter-spacing: 0.0625em;
 
-    @media(min-width:$tablet){
-    padding: 1.5rem 0 1.5rem 1.5rem;
 
-    }
+    // @media(min-width:$tablet){
+    // padding: .5rem 0 .5rem .5rem;
+
+    // }
   }
 
 }
@@ -50,12 +61,25 @@
   display: flex;
   width: 200px;
   max-width: 100%;
+
+  .hamburger-menu{
+    color: white;
+    padding-left: 100px;
+    padding-top: 30px;
+  
+    @media(min-width:$tablet){
+      display: none;
+    }
+  }
 }
 
 .navbar-logo{
   display: flex;
   flex-direction: row;
-  
+
+  @media(min-width:$tablet){
+    padding-top: 10px;
+  }
 }
 
 .navbar-logo-item{
@@ -77,15 +101,6 @@
   }
 }
 
-.hamburger-menu{
-  color: white;
-  padding-left: 100px;
-  padding-top: 30px;
-
-  @media(min-width:$tablet){
-    display: none;
-  }
-}
 
 
 

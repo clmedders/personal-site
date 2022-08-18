@@ -26,7 +26,7 @@ header, footer, div, section {
   color: white;
   width: 100%;
   font-size: 18px;
-  font-family: Silkscreen;
+  font-family: Electrolize;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,24 +45,28 @@ header, footer, div, section {
 .navbar-list {
   padding-left: 0;
   text-align: center;
+  font-size: 18px;
+}
+@media (min-width: 680px) {
+  .navbar-list {
+    width: 500px;
+    padding-left: 20px;
+  }
 }
 .navbar-list ul {
   flex-direction: column;
   display: flex;
   width: 100%;
+  padding-left: 50px;
 }
 @media (min-width: 680px) {
   .navbar-list ul {
     flex-direction: row;
+    padding-left: 0px;
   }
 }
 .navbar-list li {
-  margin: 0.5rem 0 0.5rem 0.5rem;
-}
-@media (min-width: 680px) {
-  .navbar-list li {
-    padding: 1.5rem 0 1.5rem 1.5rem;
-  }
+  margin: 0.75rem 0 0.75rem 0.75rem;
 }
 
 .navbar-right {
@@ -71,10 +75,25 @@ header, footer, div, section {
   width: 200px;
   max-width: 100%;
 }
+.navbar-right .hamburger-menu {
+  color: white;
+  padding-left: 100px;
+  padding-top: 30px;
+}
+@media (min-width: 680px) {
+  .navbar-right .hamburger-menu {
+    display: none;
+  }
+}
 
 .navbar-logo {
   display: flex;
   flex-direction: row;
+}
+@media (min-width: 680px) {
+  .navbar-logo {
+    padding-top: 10px;
+  }
 }
 
 .navbar-logo-item {
@@ -92,17 +111,6 @@ header, footer, div, section {
   .navbar-menu {
     flex-direction: row;
     display: flex;
-  }
-}
-
-.hamburger-menu {
-  color: white;
-  padding-left: 100px;
-  padding-top: 30px;
-}
-@media (min-width: 680px) {
-  .hamburger-menu {
-    display: none;
   }
 }
 
@@ -131,7 +139,7 @@ header, footer, div, section {
   width: 500px;
 }
 .hero-text h1 {
-  font-family: Silkscreen;
+  font-family: Electrolize;
 }
 @media (min-width: 680px) {
   .hero-text h1 {
