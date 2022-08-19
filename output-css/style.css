@@ -24,7 +24,8 @@ header, footer, div, section {
 
 .navbar-content {
   color: white;
-  width: 100%;
+  max-width: 100%;
+  width: 1300px;
   font-size: 18px;
   font-family: Electrolize;
   display: flex;
@@ -50,7 +51,7 @@ header, footer, div, section {
 @media (min-width: 680px) {
   .navbar-list {
     width: 500px;
-    padding-left: 20px;
+    font-size: 20px;
   }
 }
 .navbar-list ul {
@@ -66,14 +67,13 @@ header, footer, div, section {
   }
 }
 .navbar-list li {
-  margin: 0.75rem 0 0.75rem 0.75rem;
+  margin: 0.9rem 0rem 0.9rem 0.9rem;
 }
 
 .navbar-right {
   flex-direction: row;
   display: flex;
   width: 200px;
-  max-width: 100%;
 }
 .navbar-right .hamburger-menu {
   color: white;
@@ -103,6 +103,8 @@ header, footer, div, section {
 
 .navbar-menu {
   display: none;
+  width: 100%;
+  max-width: 1000px;
 }
 .navbar-menu.open-menu {
   display: flex;
@@ -111,22 +113,24 @@ header, footer, div, section {
   .navbar-menu {
     flex-direction: row;
     display: flex;
+    align-items: left;
   }
 }
 
 .hero {
   background: #ebebeb;
+  padding-bottom: 30px;
 }
 
 .hero-inner {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
   padding-left: 70px;
   padding-right: 70px;
   padding-top: 10px;
-  padding-bottom: 10px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 @media (min-width: 680px) {
   .hero-inner {
@@ -171,13 +175,13 @@ header, footer, div, section {
 }
 
 .hero-pic {
-  max-width: 100%;
-  width: 300px;
+  border-radius: 100%;
   height: auto;
   margin: auto;
-  border-radius: 100%;
+  max-width: 100%;
   object-fit: cover;
   padding-top: 20px;
+  width: 300px;
 }
 @media (min-width: 680px) {
   .hero-pic {
@@ -196,6 +200,7 @@ header, footer, div, section {
   border-radius: 28px;
   border-style: solid;
   border-width: 3px;
+  box-shadow: 0px 10px 20px #663399;
   color: white;
   font-family: sans-serif;
   font-size: 18px;
@@ -204,7 +209,27 @@ header, footer, div, section {
   height: 50px;
   padding: 10px;
   width: 150px;
-  box-shadow: 0px 10px 20px #663399;
+}
+
+.who-i-am {
+  background-color: #ebebeb;
+}
+
+.who-i-am-content {
+  max-width: 1100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+.who-i-am-content h1 {
+  font-family: Electrolize;
+  font-size: 28px;
+}
+.who-i-am-content p {
+  font-family: sans-serif;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
