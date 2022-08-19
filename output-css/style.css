@@ -20,6 +20,7 @@ header, footer, div, section {
 
 .navbar {
   background-color: #663399;
+  background: linear-gradient(100.66deg, #663399 23.13%, rgb(86, 38, 86) 82.12%);
 }
 
 .navbar-content {
