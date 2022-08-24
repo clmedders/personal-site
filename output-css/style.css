@@ -253,4 +253,81 @@ header, footer, div, section {
   line-height: 1.75;
 }
 
+.my-work {
+  background: #ebebeb;
+  display: flex;
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+
+.dev-work h1 {
+  font-family: Electrolize;
+  font-size: 28px;
+  text-align: center;
+}
+
+.dev-work-inner {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 680px) {
+  .dev-work-inner {
+    flex-direction: row;
+  }
+}
+
+.dev-work-card {
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  margin: 1em;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+}
+.dev-work-card h2 {
+  font-family: Electrolize;
+}
+.dev-work-card p {
+  font-family: sans-serif;
+}
+
+@media (min-width: 680px) {
+  .personal-work {
+    width: 500px;
+    margin: auto;
+  }
+}
+.personal-work h1 {
+  font-family: Electrolize;
+  font-size: 28px;
+  text-align: center;
+}
+
+.personal-work-inner {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 680px) {
+  .personal-work-inner {
+    flex-direction: row;
+  }
+}
+
+.personal-work-card {
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  margin: 1em;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+}
+.personal-work-card h2 {
+  font-family: Electrolize;
+}
+.personal-work-card p {
+  font-family: sans-serif;
+}
+
 /*# sourceMappingURL=style.css.map */
