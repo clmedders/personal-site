@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if(hamburgerMenu){
     hamburgerMenu.addEventListener("click", () => {
       console.log('open-menu')
+      document.body.classList.toggle('no-scroll')
       siteMenu.classList.toggle("open-menu")
     })
   }

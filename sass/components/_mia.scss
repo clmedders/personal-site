@@ -1,0 +1,55 @@
+.mia-hero{
+ margin:auto;
+ max-width: 1100px;
+}
+
+.mia-hero-pic{
+  min-height: 178px;
+  background-position: top;
+  width: 100%;
+    
+    @media screen and (min-width: 480px) {
+      min-height: 250px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      min-height: 450px;
+    }
+}
+
+.mia-content{
+  max-width: 1100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 40px;
+  text-align: center;
+  width: 100%;
+
+  @media(min-width:$tablet){
+    text-align: left;
+  }
+
+  h1{
+  font-family: Electrolize;
+  font-size: 28px;
+  text-align: center;
+
+  }
+
+  p{
+    font-family: sans-serif;
+    font-size: 18px;
+    // max-width: 75ch;
+    // margin-left: auto;
+    // margin-right: auto;
+    // line-height: 1.75;
+  }
+
+}
+
+.p-tag{
+max-width: 75ch;
+margin-left: auto;
+margin-right: auto;
+line-height: 1.75;
+}

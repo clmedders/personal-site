@@ -13,8 +13,6 @@ $laptop:1100px;
 // 1100 - desktop 
 
 $purple: #663399;
-// $purple: #AF9FC9;
-// $grey: #cfcfcf;
 $grey: #ebebeb;
 
 ul li
@@ -22,12 +20,20 @@ ul li
     list-style-type: none;
 }
 
-html, body {
-    margin: 0;
-    overflow-x:  hidden;
-    padding: 0;
-  }
+html,
+body {
+  margin: 0;
+  overflow-x:  hidden;
+  padding: 0;
+}
   
-  header, footer, div, section{
-    box-sizing: border-box;
-  }
+header, footer, div, section{
+  box-sizing: border-box;
+}
+
+.no-scroll {
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}

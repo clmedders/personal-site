@@ -10,10 +10,17 @@
   width: 1300px;
   font-size: 18px;
   font-family: Electrolize;
-  display: flex;
+  // display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 8px 16px;
+
+  &::after{
+    clear: both;
+    content: '';
+    display: block;
+  }
 
   @media(min-width:$tablet){
     flex-direction: row-reverse;
@@ -48,10 +55,14 @@
     display: flex;
     width: 100%;
     padding-left: 50px;
+    min-height: 100vh;
+    overflow: scroll;
+    padding: 18px;
 
     @media(min-width:$tablet){
       flex-direction: row;
       padding-left: 0px;
+      min-height: 0;
     }
   }
 
@@ -67,9 +78,9 @@
 
   .hamburger-menu{
     color: white;
-    padding-top: 30px;
-    width: 30%;
-    margin-left: auto;
+    width: 60px;
+    margin-top: 8px;
+    float: right;
   
     @media(min-width:$tablet){
       display: none;
@@ -80,13 +91,26 @@
 // }
 
 .navbar-logo{
-  display: flex;
+  // display: flex;
   flex-direction: row;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start;
+  float: left;
+  // display: inline-block;
 
   @media(min-width:$tablet){
     padding-top: 10px;
     padding-left: 0px;
     padding-right: 30px;
+  }
+
+  li, a{
+    display: inline-block;
+  }
+
+  li{
+    margin-left: 16px;
   }
 }
 
