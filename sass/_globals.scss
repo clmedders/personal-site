@@ -31,9 +31,9 @@ header, footer, div, section{
   box-sizing: border-box;
 }
 
-// .no-scroll {
-//   height: 100%;
-//   overflow: hidden;
-//   position: fixed;
-//   width: 100%;
-// }
+.no-scroll {
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}

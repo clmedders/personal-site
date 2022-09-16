@@ -19,6 +19,13 @@ header, footer, div, section {
   box-sizing: border-box;
 }
 
+.no-scroll {
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
 .navbar {
   background-color: #663399;
   background: linear-gradient(100.66deg, #663399 23.13%, rgb(86, 38, 86) 82.12%);
@@ -108,7 +115,7 @@ header, footer, div, section {
 }
 @media (min-width: 680px) {
   .navbar-logo {
-    padding-top: 10px;
+    padding-top: 100px;
     padding-left: 0px;
     padding-right: 30px;
     display: flex;
@@ -305,13 +312,40 @@ header, footer, div, section {
   margin: 1em;
   padding: 10px;
   text-align: center;
-  width: 200px;
+  width: 275px;
+  height: auto;
+  background-color: white;
+  transition: 0.5s;
 }
 .dev-work-card h2 {
   font-family: Electrolize;
 }
 .dev-work-card p {
   font-family: sans-serif;
+}
+
+.dev-work-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mia-card {
+  width: 150px;
+  height: 150px;
+}
+
+.vote-card {
+  width: 100px;
+  height: auto;
+}
+
+.park-card {
+  width: 150px;
+  height: auto;
+}
+
+.aiken-card {
+  width: 150px;
+  height: auto;
 }
 
 .personal-work {
@@ -345,7 +379,9 @@ header, footer, div, section {
   margin: 1em;
   padding: 10px;
   text-align: center;
-  width: 200px;
+  width: 275px;
+  background-color: white;
+  transition: 0.5s;
 }
 .personal-work-card h2 {
   font-family: Electrolize;
@@ -354,12 +390,39 @@ header, footer, div, section {
   font-family: sans-serif;
 }
 
-.cool-stuff {
-  background: #ebebeb;
-  padding-bottom: 200px;
+.personal-work-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.stuff_inner {
+.boston-card {
+  width: 150px;
+  height: auto;
+}
+
+.disney-card {
+  width: 150px;
+  height: auto;
+}
+
+.cool-stuff {
+  background: #ebebeb;
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+.cool-stuff h1 {
+  font-family: Electrolize;
+  font-size: 28px;
+  text-align: center;
+}
+.cool-stuff p {
+  font-family: Electrolize;
+  font-size: 20px;
+  text-align: center;
+}
+
+.stuff-inner {
   display: flex;
   flex-direction: column;
   max-width: 1300px;
@@ -369,83 +432,58 @@ header, footer, div, section {
   text-align: center;
   width: 100%;
   height: auto;
+  margin: auto;
+  padding-bottom: 20px;
 }
-.stuff_inner h1 {
+@media (min-width: 680px) {
+  .stuff-inner {
+    width: 500px;
+  }
+}
+@media (min-width: 680px) {
+  .stuff-inner {
+    flex-direction: row;
+  }
+}
+.stuff-inner h1 {
   font-family: Electrolize;
   font-size: 28px;
   text-align: center;
 }
-.stuff_inner p {
+.stuff-inner p {
   font-family: sans-serif;
   font-size: 20px;
 }
 
 .cool-stuff-card {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  margin: 1em;
+  padding: 10px;
   text-align: center;
-  position: relative;
-  width: 50%;
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
+  width: 275px;
+  background-color: white;
+  transition: 0.5s;
+}
+.cool-stuff-card h2 {
+  font-family: Electrolize;
 }
 .cool-stuff-card p {
   font-family: sans-serif;
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
 }
 
-.cool-stuff-pic {
-  border-radius: 20%;
+.cool-stuff-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.testing-pic {
+  width: 100px;
   height: auto;
-  margin: auto;
-  max-width: 100%;
-  object-fit: cover;
-  padding-top: 20px;
-  width: 300px;
 }
 
-.card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.cool-stuff-card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front, .card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.card-back {
-  background-color: #663399;
-  color: white;
-  transform: rotateY(180deg);
+.odin-pic {
+  width: 200px;
+  height: auto;
 }
 
 .mia-hero {
@@ -497,6 +535,15 @@ header, footer, div, section {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.75;
+}
+
+.footer {
+  background-color: #663399;
+}
+.footer p {
+  color: white;
+  text-align: center;
+  font-size: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,25 @@
 .cool-stuff{
   background: $grey;
-  padding-bottom: 200px;
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-top: 50px;
+  
+  
+  h1{
+    font-family: Electrolize;
+    font-size: 28px;
+    text-align: center;
+    }
+
+    p{
+        font-family: Electrolize;
+        font-size: 20px;
+        text-align: center;
+    }
 }
 
-.stuff_inner{
+.stuff-inner{
   display: flex;
   flex-direction: column;
   max-width: 1300px;
@@ -13,8 +29,17 @@
   text-align: center;
   width: 100%;
   height: auto;
+  margin: auto;
+ 
+  padding-bottom: 20px;
+  
+@media(min-width:$tablet){
+  width: 500px;
+}
 
-  // overflow: hidden;
+  @media(min-width:$tablet){
+    flex-direction: row;
+    }
 
   h1{
   font-family: Electrolize;
@@ -29,90 +54,37 @@
   }
 }
 
-
 .cool-stuff-card{
-  display: flex;
-  flex-direction: column;
-  margin: auto;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  margin: 1em;
+  padding: 10px;
   text-align: center;
-  // width: 300px;
+  width: 275px;
+  background-color: white;
 
-  position: relative;
-  width: 50%;
+  transition: 0.5s;
 
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-  
+  h2{
+  font-family: Electrolize;
+
+  }
 
   p{
     font-family: sans-serif;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
   }
 }
 
-.cool-stuff-pic{
-  border-radius: 20%;
+.cool-stuff-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.testing-pic{
+  width: 100px;
   height: auto;
-  margin: auto;
-  max-width: 100%;
-  object-fit: cover;
-  padding-top: 20px;
-  width: 300px;
-
-
-  // @media(min-width:$tablet){
-  //   padding-left: 0px;
-  //   margin-left: 30px
-  // }
-
-  // @media(min-width:$laptop){
-  //   margin-left: 100px;
-  //   width: 500px;
-  //   height: 500px;
-  //  }
-
-
 }
 
-.card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.cool-stuff-card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front, .card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.card-back {
-  background-color: $purple;
-  color: white;
-  transform: rotateY(180deg);
+.odin-pic{
+  width: 200px;
+  height: auto;
 }

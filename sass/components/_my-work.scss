@@ -5,19 +5,7 @@
   margin: 0 auto;
   padding-bottom: 20px;
   padding-top: 50px;
-  // width: 350px;
 }
-
-// .work_inner{
-  // max-width: 1100px;
-  // margin-left: auto;
-  // padding-left: 30px;
-  // padding-right: 30px;
-  // padding-top: 40px;
-  // text-align: center;
-  // width: 100%;
-// }
-
 
 .dev-work{
 
@@ -44,7 +32,11 @@
   margin: 1em;
   padding: 10px;
   text-align: center;
-  width: 200px;
+  width: 275px;
+  height: auto;
+  background-color: white;
+
+  transition: 0.5s;
 
   h2{
   font-family: Electrolize;
@@ -54,6 +46,30 @@
   p{
     font-family: sans-serif;
   }
+}
+
+.dev-work-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.mia-card{
+  width: 150px;
+  height: 150px;
+}
+
+.vote-card{
+  width: 100px;
+  height: auto;
+}
+
+.park-card{
+  width: 150px;
+  height: auto;
+}
+
+.aiken-card{
+  width: 150px;
+  height: auto;
 }
 
 .personal-work{
@@ -88,7 +104,10 @@
   margin: 1em;
   padding: 10px;
   text-align: center;
-  width: 200px;
+  width: 275px;
+  background-color: white;
+
+  transition: 0.5s;
 
   h2{
   font-family: Electrolize;
@@ -98,4 +117,18 @@
   p{
     font-family: sans-serif;
   }
+}
+
+.personal-work-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.boston-card{
+  width: 150px;
+  height: auto;
+}
+
+.disney-card{
+  width: 150px;
+  height: auto;
 }
