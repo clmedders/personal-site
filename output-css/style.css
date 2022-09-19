@@ -115,7 +115,7 @@ header, footer, div, section {
 }
 @media (min-width: 680px) {
   .navbar-logo {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-left: 0px;
     padding-right: 30px;
     display: flex;
@@ -425,20 +425,7 @@ header, footer, div, section {
 .stuff-inner {
   display: flex;
   flex-direction: column;
-  max-width: 1300px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 40px;
-  text-align: center;
-  width: 100%;
-  height: auto;
-  margin: auto;
-  padding-bottom: 20px;
-}
-@media (min-width: 680px) {
-  .stuff-inner {
-    width: 500px;
-  }
+  justify-content: center;
 }
 @media (min-width: 680px) {
   .stuff-inner {
@@ -483,6 +470,11 @@ header, footer, div, section {
 
 .odin-pic {
   width: 200px;
+  height: auto;
+}
+
+.cypress-pic {
+  width: 100px;
   height: auto;
 }
 
@@ -534,6 +526,13 @@ header, footer, div, section {
   max-width: 75ch;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.75;
+}
+
+ul {
+  font-family: sans-serif;
+  font-size: 18px;
+  text-align: center;
   line-height: 1.75;
 }
 

@@ -20,26 +20,30 @@
 }
 
 .stuff-inner{
+  // display: flex;
+  // flex-direction: column;
+  // max-width: 1300px;
+  // padding-left: 30px;
+  // padding-right: 30px;
+  // padding-top: 40px;
+  // text-align: center;
+  // width: 100%;
+  // height: auto;
+  // margin: 0 auto;
+ 
+  // padding-bottom: 20px;
+
+  // @media(min-width:$tablet){
+  //   flex-direction: row;
+  //   }
+
   display: flex;
   flex-direction: column;
-  max-width: 1300px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 40px;
-  text-align: center;
-  width: 100%;
-  height: auto;
-  margin: auto;
- 
-  padding-bottom: 20px;
-  
-@media(min-width:$tablet){
-  width: 500px;
-}
+  justify-content: center;
 
   @media(min-width:$tablet){
-    flex-direction: row;
-    }
+  flex-direction: row;
+  }
 
   h1{
   font-family: Electrolize;
@@ -87,4 +91,9 @@
 .odin-pic{
   width: 200px;
   height: auto;
+}
+
+.cypress-pic{
+    width: 100px;
+    height: auto;
 }
