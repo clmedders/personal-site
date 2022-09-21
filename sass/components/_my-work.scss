@@ -17,7 +17,6 @@
 }
 
 .dev-work-inner{
-
   display: flex;
   flex-direction: column;
 
@@ -27,16 +26,15 @@
 }
 
 .dev-work-card{
+  background-color: white;
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  height: auto;
   margin: 1em;
   padding: 10px;
   text-align: center;
-  width: 275px;
-  height: auto;
-  background-color: white;
-
   transition: 0.5s;
+  width: 275px;
 
   h2{
   font-family: Electrolize;
@@ -53,32 +51,31 @@
 }
 
 .mia-card{
-  width: 150px;
   height: 150px;
+  width: 150px;
 }
 
 .vote-card{
-  width: 100px;
   height: auto;
+  width: 100px;
 }
 
 .park-card{
-  width: 150px;
   height: auto;
+  width: 150px;
 }
 
 .aiken-card{
-  width: 150px;
   height: auto;
+  width: 150px;
 }
 
 .personal-work{
-
   padding-bottom: 20px;
   
 @media(min-width:$tablet){
-  width: 500px;
   margin: auto;
+  width: 500px;
 }
   h1{
   font-family: Electrolize;
@@ -88,7 +85,6 @@
 }
 
 .personal-work-inner{
-
   display: flex;
   flex-direction: column;
   // width: 500px;
@@ -99,15 +95,14 @@
 }
 
 .personal-work-card{
+  background-color: white;
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
   margin: 1em;
   padding: 10px;
   text-align: center;
-  width: 275px;
-  background-color: white;
-
   transition: 0.5s;
+  width: 275px;
 
   h2{
   font-family: Electrolize;
@@ -124,11 +119,11 @@
 }
 
 .boston-card{
-  width: 150px;
   height: auto;
+  width: 150px;
 }
 
 .disney-card{
-  width: 150px;
   height: auto;
+  width: 150px;
 }

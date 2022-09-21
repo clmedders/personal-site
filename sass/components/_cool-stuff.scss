@@ -5,7 +5,6 @@
   padding-bottom: 20px;
   padding-top: 50px;
   
-  
   h1{
     font-family: Electrolize;
     font-size: 28px;
@@ -59,15 +58,14 @@
 }
 
 .cool-stuff-card{
+  background-color: white;
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
   margin: 1em;
   padding: 10px;
   text-align: center;
-  width: 275px;
-  background-color: white;
-
   transition: 0.5s;
+  width: 275px;
 
   h2{
   font-family: Electrolize;
@@ -84,16 +82,16 @@
 }
 
 .testing-pic{
-  width: 100px;
   height: auto;
+  width: 100px;
 }
 
 .odin-pic{
-  width: 200px;
   height: auto;
+  width: 200px;
 }
 
 .cypress-pic{
-    width: 100px;
     height: auto;
+    width: 100px;
 }

@@ -6,14 +6,14 @@
 
 .navbar-content{
   color: white;
-  max-width: 100%;
-  width: 1300px;
-  font-size: 18px;
-  font-family: Electrolize;
   flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
+  font-family: Electrolize;
+  font-size: 18px;
+  justify-content: center;
+  max-width: 100%;
   padding: 8px 16px;
+  width: 1300px;
 
   &::after{
     clear: both;
@@ -22,16 +22,11 @@
   }
 
   @media(min-width:$tablet){
+    display: flex;
     flex-direction: row-reverse;
     flex-wrap:nowrap;
     padding-left: 30px;
     padding-right: 30px;
-    display: flex;
-
-
-
-    // align-items: flex-end;
-
   }
 
   @media(min-width:$laptop){
@@ -40,30 +35,29 @@
 }
 
 .navbar-list{
+  font-size: 40px;
   padding-left: 0;
   text-align: center;
-  font-size: 40px;
   width: 80%;
 
   @media(min-width:$tablet){
   width: 500px;
   font-size: 20px;
-  // align-items: flex-end;
   }
 
   ul{
-    flex-direction: column;
     display: flex;
-    width: 100%;
-    padding-left: 50px;
+    flex-direction: column;
     min-height: 100vh;
     overflow: scroll;
+    padding-left: 50px;
     padding: 18px;
+    width: 100%;
 
     @media(min-width:$tablet){
       flex-direction: row;
-      padding-left: 0px;
       min-height: 0;
+      padding-left: 0px;
     }
   }
 
@@ -75,9 +69,9 @@
 
   .hamburger-menu{
     color: white;
-    width: 60px;
-    margin-top: 8px;
     float: right;
+    margin-top: 8px;
+    width: 60px;
   
     @media(min-width:$tablet){
       display: none;
@@ -87,20 +81,17 @@
   }
 
 .navbar-logo{
+  float: left;
+  justify-content: flex-start;
   margin: 0 auto;
   padding: 0;
-  justify-content: flex-start;
-  float: left;
-  // display: inline-block;
 
   @media(min-width:$tablet){
-    padding-top: 50px;
     padding-left: 0px;
     padding-right: 30px;
-  display: flex;
-  flex-direction: row;
-
-
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
   }
 
   li, a{
@@ -113,23 +104,23 @@
 }
 
 .navbar-logo-item{
-  width: 30px;
   height: auto;
+  width: 30px;
 
 }
 
 .navbar-menu{
   display: none;
-  width: 100%;
   max-width: 1000px;
+  width: 100%;
 
   &.open-menu{
     display: flex;
   }
 
   @media(min-width:$tablet){
-    flex-direction: row;
-    display: flex;
     align-items: left;
+    display: flex;
+    flex-direction: row;
   }
 }
