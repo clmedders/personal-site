@@ -150,6 +150,14 @@ header, footer, div, section {
   }
 }
 
+.navbar-item:hover {
+  text-decoration: underline;
+}
+
+.navbar-logo-item:hover {
+  text-decoration: underline;
+}
+
 .hero {
   background: #ebebeb;
   padding-bottom: 30px;
@@ -529,7 +537,7 @@ header, footer, div, section {
   max-width: 75ch;
 }
 
-ul {
+.mia-ul {
   font-family: sans-serif;
   font-size: 18px;
   line-height: 1.75;
@@ -589,7 +597,7 @@ ul {
   max-width: 75ch;
 }
 
-ul {
+.vote-ul {
   font-family: sans-serif;
   font-size: 18px;
   line-height: 1.75;
