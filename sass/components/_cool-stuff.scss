@@ -1,7 +1,6 @@
 .cool-stuff{
   background: $grey;
   font-family: sans-serif;
-  margin: 0 auto;
   padding-bottom: 20px;
   padding-top: 50px;
   
@@ -19,30 +18,11 @@
 }
 
 .stuff-inner{
-  // display: flex;
-  // flex-direction: column;
-  // max-width: 1300px;
-  // padding-left: 30px;
-  // padding-right: 30px;
-  // padding-top: 40px;
-  // text-align: center;
-  // width: 100%;
-  // height: auto;
-  // margin: 0 auto;
- 
-  // padding-bottom: 20px;
-
-  // @media(min-width:$tablet){
-  //   flex-direction: row;
-  //   }
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  @media(min-width:$tablet){
-  flex-direction: row;
-  }
+  margin: 0 auto;
+  width: 90%;
 
   h1{
   font-family: Electrolize;
@@ -54,6 +34,18 @@
     font-family: sans-serif;
   font-size: 20px;
 
+  }
+}
+
+.cards-inner {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: space-around;
+
+
+  @media(min-width:$laptop){
+    flex-direction: row;
   }
 }
 
