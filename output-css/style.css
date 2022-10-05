@@ -296,6 +296,7 @@ header, footer, div, section {
   margin: 0 auto;
   padding-bottom: 20px;
   padding-top: 50px;
+  flex-direction: column;
 }
 
 .dev-work {
@@ -321,47 +322,72 @@ header, footer, div, section {
   }
 }
 
-.dev-work-card {
+.dev-card {
   background-color: white;
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
-  height: auto;
   margin: 1em;
   padding: 10px;
   text-align: center;
   transition: 0.5s;
   max-width: 300px;
-  height: auto;
 }
-.dev-work-card h2 {
+
+.dev-card-text h2 {
   font-family: Electrolize;
 }
-.dev-work-card p {
+.dev-card-text p {
   font-family: sans-serif;
 }
 
-.dev-work-card:hover {
+.dev-card-image {
+  max-height: 200px;
+  max-width: 200px;
+  margin: 0 auto;
+  display: inline-block;
+}
+.dev-card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.dev-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.mia-card {
-  height: 150px;
-  width: 150px;
+.personal-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  margin: 1em;
+  padding: 10px;
+  text-align: center;
+  transition: 0.5s;
+  max-width: 300px;
 }
 
-.vote-card {
-  height: auto;
-  width: 100px;
+.personal-card-text h2 {
+  font-family: Electrolize;
+}
+.personal-card-text p {
+  font-family: sans-serif;
 }
 
-.park-card {
+.personal-card-image {
+  max-height: 200px;
+  max-width: 200px;
+  margin: 0 auto;
+  display: inline-block;
+}
+.personal-card-image img {
+  width: 100%;
   height: auto;
-  width: 150px;
+  object-fit: contain;
 }
 
-.aiken-card {
-  height: auto;
-  width: 150px;
+.personal-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .personal-work {
@@ -389,39 +415,6 @@ header, footer, div, section {
   .personal-work-inner {
     flex-direction: row;
   }
-}
-
-.personal-work-card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
-  height: auto;
-  margin: 1em;
-  padding: 10px;
-  text-align: center;
-  transition: 0.5s;
-  max-width: 300px;
-  height: auto;
-}
-.personal-work-card h2 {
-  font-family: Electrolize;
-}
-.personal-work-card p {
-  font-family: sans-serif;
-}
-
-.personal-work-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.boston-card {
-  height: auto;
-  width: 150px;
-}
-
-.disney-card {
-  height: auto;
-  width: 150px;
 }
 
 .cool-stuff {
