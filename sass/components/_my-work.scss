@@ -11,8 +11,12 @@
 .dev-work{
   flex-direction: column;
   justify-content: space-around;
-  // width: 725px;
   display: flex;
+
+  @media(min-width:$laptop){
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
 
   h1{
   font-family: Electrolize;
@@ -35,12 +39,17 @@
 .dev-card{
   background-color: white;
   border-radius: 10px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+
   margin: 1em;
   padding: 10px;
   text-align: center;
   transition: 0.5s;
   max-width: 250px;
+  
+
+  @media(min-width:$laptop){
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  }
 
 }
 
@@ -57,15 +66,20 @@
 }
 
 .dev-card-image{
-  max-height: 200px;
-  max-width: 200px;
+  height: auto;
+  width: 200px;
   margin: 0 auto;
+  // display: inline-block;
 
   img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  display: inline-block;
+    // width: 100%;
+    // height: auto;
+    // object-fit: contain;
+    // display: block;
+
+    max-width: 100%;
+    max-height: auto;
+    // Display: block;
     }
 
 }
@@ -77,12 +91,15 @@
 .personal-card{
   background-color: white;
   border-radius: 10px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
   margin: 1em;
   padding: 10px;
   text-align: center;
   transition: 0.5s;
   max-width: 250px;
+
+  @media(min-width:$laptop){
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .personal-card-text{

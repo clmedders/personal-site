@@ -304,6 +304,12 @@ header, footer, div, section {
   justify-content: space-around;
   display: flex;
 }
+@media (min-width: 1100px) {
+  .dev-work {
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+}
 .dev-work h1 {
   font-family: Electrolize;
   font-size: 28px;
@@ -325,12 +331,16 @@ header, footer, div, section {
 .dev-card {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
   margin: 1em;
   padding: 10px;
   text-align: center;
   transition: 0.5s;
   max-width: 250px;
+}
+@media (min-width: 1100px) {
+  .dev-card {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .dev-card-text h2 {
@@ -341,15 +351,13 @@ header, footer, div, section {
 }
 
 .dev-card-image {
-  max-height: 200px;
-  max-width: 200px;
+  height: auto;
+  width: 200px;
   margin: 0 auto;
 }
 .dev-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: inline-block;
+  max-width: 100%;
+  max-height: auto;
 }
 
 .dev-card:hover {
@@ -359,12 +367,16 @@ header, footer, div, section {
 .personal-card {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
   margin: 1em;
   padding: 10px;
   text-align: center;
   transition: 0.5s;
   max-width: 250px;
+}
+@media (min-width: 1100px) {
+  .personal-card {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .personal-card-text h2 {
@@ -448,12 +460,16 @@ header, footer, div, section {
 .cool-stuff-card {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
   margin: 1em;
   padding: 10px;
   text-align: center;
   transition: 0.5s;
   max-width: 250px;
+}
+@media (min-width: 1100px) {
+  .cool-stuff-card {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .cool-stuff-text h2 {
@@ -464,15 +480,13 @@ header, footer, div, section {
 }
 
 .cool-stuff-image {
-  max-height: 200px;
-  max-width: 200px;
+  height: auto;
+  width: 200px;
   margin: 0 auto;
 }
 .cool-stuff-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: inline-block;
+  max-width: 100%;
+  max-height: auto;
 }
 
 .cool-stuff-card:hover {
@@ -649,6 +663,64 @@ header, footer, div, section {
 }
 
 .odin-ul {
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.75;
+  text-align: center;
+}
+
+.aiken-hero {
+  margin: auto;
+  max-width: 1100px;
+}
+
+.aiken-hero-pic {
+  background-position: top;
+  min-height: 100px;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .aiken-hero-pic {
+    min-height: 250px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .aiken-hero-pic {
+    min-height: 450px;
+  }
+}
+
+.aiken-content {
+  max-width: 1100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 680px) {
+  .aiken-content {
+    text-align: left;
+  }
+}
+.aiken-content h1 {
+  font-family: Electrolize;
+  font-size: 28px;
+  text-align: center;
+}
+.aiken-content p {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.p-tag {
+  line-height: 1.75;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75ch;
+}
+
+.aiken-ul {
   font-family: sans-serif;
   font-size: 18px;
   line-height: 1.75;
