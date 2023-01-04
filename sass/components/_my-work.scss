@@ -11,11 +11,13 @@
 .dev-work{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  // justify-content: space-around;
+  border:10px solid blue;
+
 
   @media(min-width:$laptop){
-    padding-bottom: 20px;
-    padding-right: 20px;
+    // padding-bottom: 20px;
+    // padding-right: 20px;
   }
 
   h1{
@@ -28,8 +30,11 @@
 .dev-work-inner{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin: auto;
+  // justify-content: space-around;
+  // margin: auto;
+
+  border:10px solid red;
+
 
   @media(min-width:$laptop){
     flex-direction: row;
@@ -77,68 +82,75 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.personal-card{
-  background-color: white;
-  border-radius: 10px;
-  margin: 1em;
-  padding: 10px;
-  text-align: center;
-  transition: 0.5s;
-  max-width: 250px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
-}
 
-.personal-card-text{
 
-  h2{
-    font-family: Electrolize;
+
+
+
+
+
+// .personal-card{
+//   background-color: white;
+//   border-radius: 10px;
+//   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+//   margin: 1em;
+//   max-width: 250px;
+//   padding: 10px;
+//   text-align: center;
+//   
+// }
+
+// .personal-card-text{
+
+//   h2{
+//     font-family: Electrolize;
   
-    }
+//     }
   
-    p{
-      font-family: sans-serif;
-    }
-}
+//     p{
+//       font-family: sans-serif;
+//     }
+// }
 
-.personal-card-image{
-  height: auto;
-  width: 200px;
-  margin: 0 auto;
+// .personal-card-image{
+//   height: auto;
+//   width: 200px;
+//   margin: 0 auto;
   
 
-  img{
-    max-width: 100%;
-    max-height: 115px;
-    }
+//   img{
+//     max-width: 100%;
+//     max-height: 115px;
+//     }
 
-}
+// }
 
-.personal-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+// .personal-card:hover {
+//   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+// }
 
 
 
-.personal-work{
-  flex-direction: column;
-  justify-content: space-around;
-  display: flex;
+// .personal-work{
+//   flex-direction: column;
+//   justify-content: space-around;
+//   display: flex;
 
-  h1{
-  font-family: Electrolize;
-  font-size: 28px;
-  text-align: center;
-  }
-}
+//   h1{
+//   font-family: Electrolize;
+//   font-size: 28px;
+//   text-align: center;
+//   }
+// }
 
-.personal-work-inner{
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  justify-content: space-around;
+// .personal-work-inner{
+//   display: flex;
+//   flex-direction: column;
+//   margin: auto;
+//   justify-content: space-around;
 
-  @media(min-width:$laptop){
-    flex-direction: row;
-  }
-}
+//   @media(min-width:$laptop){
+//     flex-direction: row;
+//   }
+// }
 
