@@ -1,0 +1,25 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "this is me... hope you like it!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass --watch ./_assets/sass/style.scss:./_assets/output-css/style.css",
+    "sass": "sass ./_assets/sass/style.scss:./_assets/output-css/style.css",
+    "start": "jekyll serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clmedders/personal-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clmedders/personal-site/issues"
+  },
+  "homepage": "https://github.com/clmedders/personal-site#readme",
+  "dependencies": {
+    "sass": "^1.54.4"
+  }
+}
