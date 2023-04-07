@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output-css/style.css">
+  <style>
+    a {
+      text-decoration: none;
+    }
+
+    a {
+      color: inherit;
+    }
+  </style>
+  <title>Vote.gov</title>
+</head>
+<body style="background: #ebebeb;">
+  <header class="vote-heder">
+    <div class="vote-hero">
+      <img class="vote-hero-pic" src="images/vote-card.png">
+    </div>
+  </header>
+  <main>
+    <section class="vote" style="padding-bottom: 40px">
+      <div class="vote-content container">
+        <h1>
+          VOTE.gov
+        </h1>
+        <p class="p-tag">
+          This project is one that I am very proud of… not just for the type of work that was done but also that this was my first chance to build a testing pipeline and process from the ground up.  Coming into the project there was just manual testing and no QA/Testing person who was dedicated to this.  
+          <br>
+          <br>
+          For test automation, the team decided to try and utilize Cypress as much as possible. These different tools will be address and explained below.  
+          <br>
+          <br>
+          For vote.gov, this site is your one stop for anything voter registration.  Anyone can get more information for how, when, and even where so that they can do their civic duty and select their representatives. 
+          <br>
+          <br>
+          <b>Cypress</b>
+          <br>
+          This tool is very robust and allows any users to create testing steps run though anything that is in a browser.  For Vote.gov this was used to run though several functional tests to ensure that each user is having a positive experience.  This also allows the team to identify and address any bugs that might appear as soon as possible. 
+          <br>
+          <br>
+          <b>Link-Validation </b>
+          <br> 
+          When anyone is clicking though a site the worst thing that can happen is clicking on a link and getting a 404 error, or page not found.  Cypress tests were written to check links to verify that they are working as expected and that they lead to the correct page as well. 
+          <br>
+          <br>
+          <b>Cypress-Axe Plugin </b>
+          <br>
+          Accessibility should be on the forefront of any developer minds… especially for any government site let alone one for voter registration.  This was key for our team was to find any accessibility errors and then find a way to ensure the site meets standards.  Cypress has a plug in that runs off AXE core and can be easy to set up and add into any testing pipeline.  
+          <br>
+          <br>
+          <b> GitHub Actions</b> 
+          <br>
+          In this project, GitHub actions were used to run the above tests through a pipeline.  This was triggered every time there was a pull request and any push that was done after
+          <br>
+          <br>
+          This was a fun project to work on, I was pushed to look at things in a different way and was able to try new things and see what works.  The support I was given for this project has made me an even better developer on top of Test Engineer.  I now feel more confident in my skills and my ability to think though things and make plans to better provided test coverage for this project.  
+          <br>
+          <br>
+          Links to reports, tests, tools, and other things 
+          <br>
+          <br>
+          <ul class="vote-ul">
+            <li>Cypress ->  <a style="text-decoration: underline;" href="https://www.cypress.io/" target="_blank"> 
+              click here </a></li>
+            <li>AXE-plugin -> <a style="text-decoration: underline;" href="https://github.com/component-driven/cypress-axe" target="_blank"> 
+              click here </a></li>
+            <li>GitHub Actions -> <a style="text-decoration: underline;" href="https://github.com/features/actions" target="_blank"> 
+              click here </a></li>          
+            <li>Cypress tests for project -> <a style="text-decoration: underline;" href="https://github.com/usagov/vote-gov/tree/staging/cypress/e2e" target="_blank"> 
+              click here </a></</li>         
+            <li>Check out the live site -> <a style="text-decoration: underline;" href="https://vote.gov/" target="_blank"> 
+              click here </a></li>
+          </ul>
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
