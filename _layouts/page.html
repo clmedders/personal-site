@@ -1,12 +1,8 @@
 <html>
   {% include meta.html %}
 <body style="background: #ebebeb;">
-  <header class="page-heder">
-    <div class="page-hero">
-      <!-- make this a fluid with the image needed  -->
-      <img class="mia-hero-pic" src="images/mia.png">
-    </div>
-  </header>
+  {% include page-navbar.html %} 
+
   <main>
     <section class="mia" style="padding-bottom: 40px">
       <div class="page-content container">
@@ -14,5 +10,9 @@
       </div>
     </section>
   </main>
+  {% include
+    footer.html %}
 </body>
 </html>
+
+ 
