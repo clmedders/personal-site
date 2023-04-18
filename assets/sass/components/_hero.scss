@@ -63,8 +63,9 @@
   }
 
   @media(min-width:$laptop){
-    margin-left: 100px;
     width: 500px;
+    margin-left: 150px;
+
    }
 
   img {
@@ -84,7 +85,6 @@
   
     @media(min-width:$laptop){
       height: 500px;
-      margin-left: 100px;
       width: 500px;
      }
   }
