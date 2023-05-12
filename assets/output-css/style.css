@@ -63,7 +63,6 @@ header, footer, div, section {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow: scroll;
     padding-left: 50px;
     padding: 18px;
     width: 100%; }
