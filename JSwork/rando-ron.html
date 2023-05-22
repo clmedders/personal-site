@@ -1,0 +1,57 @@
+<h1>Random Ron</h1>
+<img alt="Ron Swanson standing in front of a buffet stating, 'I've said too much.'" src="https://giphygifs.s3.amazonaws.com/media/iofbYa67AbBg4/giphy.gif">
+<blockquote id="quote" aria-live="polite"></blockquote>
+
+<p>
+	<button id="get-quote">More Ron</button>
+</p>
+
+<script>
+  // get more ron button 
+  const moreRon = document.getElementById("get-quote")
+  // console.log(moreRon)
+
+  // get the quote box 
+  const quote = document.getElementById('quote')
+  // console.log(quote)
+
+  const pulledQuotes = []
+  // console.log(pulledQuotes)
+
+  function fetchQuote() {
+  // fech the data from the end point 
+  fetch('https://ron-swanson-quotes.herokuapp.com/v2/quotes').then(function (response) {
+
+  if (response.ok){
+    return response.json()
+  }
+    throw response.status;
+
+  })
+  
+  .then(function (data) {
+    if (pulledQuotes >= 50) {
+      pulledQuotes.shift()
+    }
+     const currentQuote = data[0]
+    if (pulledQuotes.includes(currentQuote)) {
+      fetchQuote()
+    } else {
+      pulledQuotes.push(currentQuote)
+      quote.textContent = currentQuote;
+    }
+  })
+  
+  .catch(function (error) {
+  // There was an error
+  quote.textContent = '[Something went wrong, sorry!] I have a joke for you... The government in this town is excellent, and uses your tax dollars efficiently.';
+  });
+
+  }
+
+
+moreRon.addEventListener('click', fetchQuote)
+
+  // write an click event function with the button and call the end point
+ 
+</script>
