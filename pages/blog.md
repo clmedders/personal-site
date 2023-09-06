@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Blogs
 --- 
 
 Hold page for blog posts 
@@ -13,7 +14,7 @@ Hold page for blog posts
           <div class="dev-card-image"> <img src="/assets/images/mia-card-2.png"></div>
           <div class="dev-card-text">
             <h2>Made In America</h2>
-            <p>An initiative to help promote more American made goods. Click <a style="text-decoration: underline;" href="/pages/mia.html" > 
+            <p>An initiative to help promote more American made goods. Click <a style="text-decoration: underline;" href="/blog_pages/mia.html" > 
               here </a>to read more.</p>
           </div>
         </div>
@@ -21,7 +22,7 @@ Hold page for blog posts
           <div class="dev-card-image"> <img src="/assets/images/vote-card.png"></div>
           <div class="dev-card-text">
             <h2>Vote.gov</h2>
-            <p>Your one stop shop for election information. Click <a style="text-decoration: underline;" href="/pages/vote.html" > 
+            <p>Your one stop shop for election information. Click <a style="text-decoration: underline;" href="/blog_pages/vote.html" > 
               here </a>to read more.</p>
           </div>
         </div>
@@ -29,7 +30,7 @@ Hold page for blog posts
           <div class="dev-card-image"> <img src="/assets/images/ys park.jpeg"></div>
           <div class="dev-card-text">
             <h2>National Parks</h2>
-            <p>My first landing page. Click <a style="text-decoration: underline;" href="/pages/natpark.html" > 
+            <p>My first landing page. Click <a style="text-decoration: underline;" href="/blog_pages/natpark.html" > 
               here </a>to read more.</p>
           </div>
         </div>
@@ -37,7 +38,7 @@ Hold page for blog posts
           <div class="dev-card-image"> <img src="/assets/images/coffee.png"></div>
           <div class="dev-card-text">
             <h2>Aiken Coffeehouse and Lounge</h2>
-            <p>My brain child and dream business. Click <a style="text-decoration: underline;" href="/pages/aiken.html" > 
+            <p>My brain child and dream business. Click <a style="text-decoration: underline;" href="/blog_pages/aiken.html" > 
               here </a>to read more.</p>
           </div>
         </div>
@@ -58,7 +59,7 @@ Hold page for blog posts
           <div class="personal-card-image"> <img src="/assets/images/disney.png"></div>
           <div class="personal-card-text">
             <h2>Disney and Universal</h2>
-            <p>Check out my trip to Disney and Harry Potter World. Click <a style="text-decoration: underline;" href="https://www.youtube.com/watch?v=mnGA00I5H1o"  target="_blank">here</a> to watch.</p></p>
+            <p>Check out my trip to Disney and Harry Potter World. Click <a style="text-decoration: underline;" href="https://www.youtube.com/watch?v=mnGA00I5H1o"  target="_blank">here</a> to watch.</p>
           </div>
         </div>
       </div>

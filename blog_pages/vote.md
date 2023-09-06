@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: blog_page
+# title: Vote.gov
 ---     
 
 
