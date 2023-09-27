@@ -3,3 +3,5 @@ name: My Jekyll Website
 markdown: kramdown
 kramdown:
   input: GFM
+
+home: /  

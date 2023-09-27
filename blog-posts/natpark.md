@@ -1,7 +1,6 @@
 ---
-layout: page
+layout: blog_page
 ---  
-
 
 # National Parks
 
