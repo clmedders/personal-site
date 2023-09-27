@@ -11,9 +11,14 @@
   <div id="site-menu" class="navbar-menu">
         <div class="navbar-list">
           <ul>
-            {% for page in site.pages %}
+          <!-- {% for page in site.pages %}
             <li><a href="{{ page.url }}" >{{ page.title | default: page.name }}</a></li>
-          {% endfor %}
+          {% endfor %} -->
+          {% for page in site.pages %}
+          {% if page.navbar %}
+            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+          {% endif %}
+        {% endfor %} 
         </ul>
         </div>
         </div>

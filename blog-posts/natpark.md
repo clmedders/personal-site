@@ -1,8 +1,6 @@
 ---
 layout: blog_page
-# title: National Parks
 ---  
-
 
 # National Parks
 

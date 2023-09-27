@@ -1,8 +1,6 @@
 ---
 layout: blog_page
-# title: Vote.gov
 ---     
-
 
 # VOTE.gov
 
