@@ -1,5 +1,5 @@
 ---
-layout: blog_page
+layout: blog
 ---  
 
 # National Parks
@@ -15,8 +15,8 @@ One of the coolest parts was my first pass at this project looked very, very, ve
 I was told that the best front-end developers... are the best con artist.  The goal is to recreate the design that you are given. This really was the best first experience to be given a design and then asked to recreate it. 
 
 Check out my work. 
-| -------- | 
-| [Code](https://github.com/clmedders/odin-landing-page)| 
-| [Example Page](https://cdn.statically.io/gh/TheOdinProject/curriculum/81a5d553f4073e593d23a6ab00d50eef8620796d/foundations/html_css/project/imgs/01.png)| 
-| [Final Page](https://clmedders.github.io/odin-landing-page/)|
+
+- **[Code](https://github.com/clmedders/odin-landing-page)**
+- **[Example Page](https://cdn.statically.io/gh/TheOdinProject/curriculum/81a5d553f4073e593d23a6ab00d50eef8620796d/foundations/html_css/project/imgs/01.png)**
+- **[Final Page](https://clmedders.github.io/odin-landing-page/)**
 

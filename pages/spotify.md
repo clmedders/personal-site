@@ -1,7 +1,7 @@
 ---
 layout: page
 title: My Spotify
-navbar: Home
+# navbar: Home
 
 --- 
 

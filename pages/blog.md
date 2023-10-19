@@ -3,10 +3,26 @@ layout: page
 title: Blogs
 navbar: Home
 --- 
+<div class="blog-card">
+{% assign title = "National Park" %}
+{% assign content = "This is the first landing page I worked on" %}
+{% assign file_path = "natpark.html" %}
 
-Hold page for blog posts 
+{% include blog-component.html %}
 
-<section id="my-work" class="my-work">
+{% assign title = "Aiken Coffeehouse and Lounge" %}
+{% assign content = "My dream business and first hard coded site" %}
+{% assign file_path = "aiken.html" %}
+
+{% include blog-component.html %}
+
+{% assign title = "History and use of CLI" %}
+{% assign content = "Learn more about the Command Line Interface" %}
+{% assign file_path = "cli.html" %}
+
+{% include blog-component.html %}
+</div>
+<!-- <section id="my-work" class="my-work">
   <div class="work_inner container">
     <div class="dev-work">
       <h1>Development Work</h1>
@@ -65,4 +81,4 @@ Hold page for blog posts
         </div>
       </div>
     </div>
-</section>
+</section> -->
