@@ -1,5 +1,5 @@
 ---
-layout: blog_page
+layout: blog
 --- 
 
 Check out some cool Java Script Projects and games that were made by yours truly. 

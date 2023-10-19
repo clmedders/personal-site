@@ -1,5 +1,5 @@
 ---
-layout: blog_page
+layout: blog
 ---  
 
 
@@ -14,6 +14,6 @@ In terms of the website's layout, I have utilized HTML to create a user-friendly
 Overall, my project highlights the unique features of the Aiken Coffee House and Lounge and showcases my skills in CSS, HTML, and JavaScript. Through this project, I have gained valuable experience in web development and design while also exploring my passion for environmentally friendly businesses. If given the opportunity, starting a business like the Aiken Coffee House and Lounge would be a dream come true for me, and I am excited to see how my skills can contribute to its success.
  
 Check out my work. 
-| -------- | 
-| [Code](https://github.com/clmedders/odin-recipes./settings/pages)|  
-| [Final Page](https://clmedders.github.io/odin-recipes./)|
+
+- **[Code](https://github.com/clmedders/odin-recipes./settings/pages)**
+- **[Final Page](https://clmedders.github.io/odin-recipes./)**
