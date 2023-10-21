@@ -5,3 +5,5 @@ _old-site
 _site
 
 .sass-cache
+
+.vscode
