@@ -36,14 +36,14 @@ Knowing how to use the CLI is essential for developers because it allows them to
 
 Even though CLI is cool and important there are some downsides as well.
 
-- GUI is more user-friendly.
-- steeper learning curve associated with memorizing commands and complex syntax/arguments (however you can assign alias and automate commands)
-- different commands used in different shells.
-- example:
-- List files and folders
-- mac -> ls and windows -> dir
-- Full path of current folder/directory
-- mac -> pwd and windows -> cd
+  - GUI is more user-friendly.
+  - steeper learning curve associated with memorizing commands and complex syntax/arguments (however you can assign alias and automate commands)
+  - different commands used in different shells.
+  - example:
+  - List files and folders
+  - mac -> ls and windows -> dir
+  - Full path of current folder/directory
+  - mac -> pwd and windows -> cd
 
 **Why this matters**
 
@@ -58,7 +58,6 @@ Below is a list of commands you might find useful:
 | Command | Action |
 | -- |
 | pwd | Print Working Directory |
-| --- | --- | --- |
 | ls | List Directories |
 | cd | Change Directory |
 | mkdir | make a directory You can also create subdirectories at the same time with the -p (parent flag). |
@@ -96,13 +95,8 @@ Here are some fun commands to run on your MacOS
 - [Ancient History  What is the Command Line? Adafruit Learning Syste](https://learn.adafruit.com/what-is-the-command-line/ancient-history)
 - [Mac Terminal Commands and Tricks List (macupdate.com)](https://www.macupdate.com/how-to/mac-terminal-commands-list)
 
-**AI was also used to review for clarity and grammar**
 
-
-|stripe=true|
-|---|
-| Cell 1 | Cell 2 
-| --- | --- | --- |
-| Cell 4 | Cell 5 | Cell 6 |
-| --- | --- | --- |
-| Cell 7 | Cell 8 | Cell 9 |
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
