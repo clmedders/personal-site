@@ -1,5 +1,3 @@
-title: My Jekyll Website
-
 markdown: kramdown
 kramdown:
   input: GFM
