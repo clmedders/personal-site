@@ -5,4 +5,4 @@ source "https://rubygems.org"
 # gem "rails"
 
 gem "jekyll"
-ruby '3.1.4'
+ruby '2.6.10'
