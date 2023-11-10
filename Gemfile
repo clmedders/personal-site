@@ -4,5 +4,5 @@ source "https://rubygems.org"
 
 # gem "rails"
 
-gem "jekyll", "~> 4.3"
-ruby '3.1.4'
+gem "jekyll"
+ruby '2.7.4'
