@@ -1,26 +1,18 @@
 {
-  "name": "personal-site",
-  "version": "1.0.0",
-  "description": "this is me... hope you like it!",
-  "main": "index.js",
+  "name": "purple-pulsar",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "sass --watch ./assets/sass/style.scss:./assets/output-css/style.css",
-    "sass": "sass ./assets/sass/style.scss:./assets/output-css/style.css",
-    "start": "bundle exec jekyll serve",
-    "build": "bundle exec jekyll build"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/clmedders/personal-site.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/clmedders/personal-site/issues"
-  },
-  "homepage": "https://github.com/clmedders/personal-site#readme",
   "dependencies": {
-    "sass": "^1.54.4"
+    "@astrojs/mdx": "^1.1.5",
+    "@astrojs/rss": "^3.0.0",
+    "@astrojs/sitemap": "^3.0.3",
+    "astro": "^3.5.4"
   }
 }
