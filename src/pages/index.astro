@@ -1,0 +1,30 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>Hello, There!</h1>
+			<p>
+				Welcome to my site, I hope that you came here excited and ready to go! The purpose of this mix of content, styles and scripting is to give you a chance to learn more about me and see what work I might have done or even currently working on. There will be a mix of blogs, maybe some YouTube videos and a few brain dumps that might not make any sense. However if you would be so kind as to check what you think is intresting I would be very happy.
+				<br>
+				<br>
+				With that being said please feel free to click around and see projects I have worked on both personally and professionally.
+				<br>
+				<br>		
+				<br>
+				<br>
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
