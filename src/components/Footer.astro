@@ -3,7 +3,7 @@ const today = new Date();
 ---
 
 <footer>
-	<div class="social-links">
+	<div class="social-links p-0 bg-blue-950 w-full h-full position: fixed">
 		<a href="https://github.com/clmedders" target="_blank">
 			<span class="sr-only">Go to Astro's GitHub repo</span>
 			<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/github"
@@ -16,12 +16,14 @@ const today = new Date();
 	</div>
 </footer>
 <style>
-	footer {
+	/* footer {
 		padding: 1em;
     background: linear-gradient(100.6deg, purple 23.13%, rgb(86, 38, 86) 82.12%);
 		color: rgb(var(--gray));
 		text-align: center;
-	}
+		position: fixed;
+		width: 100%;
+	} */
 	.social-links {
 		display: flex;
 		justify-content: center;
@@ -33,6 +35,6 @@ const today = new Date();
 		color: white
 	}
 	.social-links a:hover {
-		color: rgb(var(--gray-dark));
+		color: lightskyblue
 	}
 </style>
