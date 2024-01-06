@@ -1,0 +1,27 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+// import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+		<h1>Office Quotes</h1>
+    <p>For a litle pick me up during the long work day!</p>
+    <div class=" flex flex-col justify-center space-y-4">
+    <!-- <div class=" border m-auto"> -->
+      <button id="quote-btn" class=" bg-blue-950 text-white p-2 w-auto rounded-lg m-auto">Quote Me...</button>
+      <h5 id="character" class=" m-auto"></h5>
+      <p id="quote-box" class=" m-auto text-center"></p>
+    </div>
+		</main>
+    <script src="../scripts/script.js"></script>
+	</body>
+</html>
