@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "npx eslint --fix src/scripts/script.js"
   },
   "dependencies": {
     "@astrojs/mdx": "^1.1.5",
@@ -16,5 +17,10 @@
     "@astrojs/tailwind": "^5.0.3",
     "astro": "^3.5.4",
     "tailwindcss": "^3.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1"
   }
 }
