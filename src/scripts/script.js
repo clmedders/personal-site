@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-// get more ron button
+// get quote button
 const quoteBtn = document.getElementById('quote-btn');
 // console.log(moreRon)
 
@@ -10,8 +10,10 @@ const quoteBox = document.getElementById('quote-box');
 // get the character box
 const character = document.getElementById('character');
 
+const pic = document.getElementById('pic');
+
 function fetchQuote() {
-// fech the data from the end point
+// fetch the data from the end point
   fetch('https://officeapi.akashrajpurohit.com/quote/random').then((response) => {
     if (response.ok) {
       return response.json();
@@ -20,8 +22,10 @@ function fetchQuote() {
   }).then((data) => {
     character.textContent = data.character;
     quoteBox.textContent = data.quote;
+    pic.src = data.character_avatar_url;
+
+    console.log(data);
   }).catch((error) => {
-  // There was an error
     console.warn(error);
   });
 }
