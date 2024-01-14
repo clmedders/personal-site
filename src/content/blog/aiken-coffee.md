@@ -15,5 +15,5 @@ Overall, my project highlights the unique features of the Aiken Coffee House and
  
 Check out my work. 
 
-- **[Code](https://github.com/clmedders/odin-recipes./settings/pages)**
-- **[Final Page](https://clmedders.github.io/odin-recipes./)**
+- **[Code](https://github.com/clmedders/PoC-Back-Button)**
+- **[Final Page](https://clmedders.github.io/PoC-Back-Button/)**
