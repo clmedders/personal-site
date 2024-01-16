@@ -23,8 +23,6 @@ function fetchQuote() {
     character.textContent = data.character;
     quoteBox.textContent = data.quote;
     pic.src = data.character_avatar_url;
-
-    console.log(data);
   }).catch((error) => {
     console.warn(error);
   });
