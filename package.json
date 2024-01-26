@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "npx eslint --fix src/scripts/script.js",
+    "lint": "npx eslint --ext js,ts,tsx",
     "prepare": "husky install"
   },
   "dependencies": {
