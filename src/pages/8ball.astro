@@ -1,0 +1,31 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+// import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+		<h1 class=" text-center">Magic 8 Ball</h1>
+
+    <div class="font-bold text-white rounded-full bg-black flex flex-col items-center justify-center font-mono" style="height: 700px; width: 700px;">
+      <!-- <p> -->
+        <p>Ask me a question...</p>
+        <input type="text" id="text" class="text-black p-2">
+        <button id="roll-btn">Roll the 8 ball</button>
+        <button id="reset">Reset the 8 ball</button>
+        <div id="fortune">
+          <div id="fortune-text" class=" text-blue-500 mt-6"></div>
+        </div>
+    </div>
+		</main>
+    <script src="src/scripts/8ball.js"c></script>
+	</body>
+</html>
