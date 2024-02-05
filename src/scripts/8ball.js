@@ -35,23 +35,14 @@ const responses = [
 // const res = document.getElementById('reset');
 const rollBtn = document.getElementById('roll-btn');
 const words = document.getElementById('fortune-text');
-const box = document.getElementById('text');
 const reset = document.getElementById('reset');
 
 function clear() { window.location.reload(); }
 
-// function loadText() {
-//   console.log('Button was clicked!');
-//   loading.textContent = message[Math.floor(Math.random() * message.length)];
-// }
-
 function fortuneText() {
-  console.log('Button was clicked!');
   words.textContent = responses[Math.floor(Math.random() * message.length)];
 }
 
 rollBtn.addEventListener('click', fortuneText);
-
-// reset.addEventListener('click', loadText);
 
 reset.addEventListener('click', clear);
