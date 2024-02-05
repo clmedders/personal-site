@@ -13,16 +13,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
-		<h1 class=" text-center">Magic 8 Ball</h1>
+		<h1 class=" text-center">Online Genie</h1>
 
-    <div class="font-bold text-white rounded-full bg-black flex flex-col items-center justify-center font-mono" style="height: 700px; width: 700px;">
+    <div class="font-bold text-black flex flex-col items-center justify-center font-mono sm:min-h-px">
       <!-- <p> -->
         <p>Ask me a question...</p>
-        <input type="text" id="text" class="text-black p-2">
-        <button id="roll-btn">Roll the 8 ball</button>
-        <button id="reset">Reset the 8 ball</button>
+        <input type="text" id="text" class="bg-slate-200 text-black p-2">
+        <button id="roll-btn">Ready For My Answer</button>
+        <button id="reset">Ask Another Quesion</button>
         <div id="fortune">
-          <div id="fortune-text" class=" text-blue-500 mt-6"></div>
+          <div id="fortune-text" class=" text-purple-700 mt-6"></div>
         </div>
     </div>
 		</main>
