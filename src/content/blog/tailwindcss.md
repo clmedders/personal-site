@@ -18,7 +18,7 @@ While some might view this as a minor issue, it can be challenging for web devel
 Enter Tailwind CSS, a tool that simplifies the process of styling web applications. Instead of writing extensive code, Tailwind CSS provides a set of predefined classes that can be easily applied to HTML elements. Let's compare the following examples to illustrate the difference between Sass and Tailwind CSS:
 
 Sass:
-```
+``` sass
 element {
   background-color: white;
   width: 80%;
@@ -28,7 +28,7 @@ element {
 ```
 
 Tailwind CSS:
-```
+``` sass
 <div class="bg-white w-4/5 font-sans text-lg">...</div>
 ```
 <br>
