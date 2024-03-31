@@ -1,0 +1,42 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+  <div class="flex flex-col justify-center items-center pt-12">
+		<h1 class=" text-center">Check Your Age</h1>
+    <div class="inputs flex gap-6">
+      <div class="inputText flex flex-col items-center">
+          <span>Month</span>
+          <input class="text-center" type="text" maxlength="2" size="10" placeholder="MM" id="month">
+      </div>
+      <div class="inputText flex flex-col items-center">
+          <span>Day</span>
+          <input class="text-center" type="text" maxlength="2" size="10" placeholder="DD" id="day">
+      </div>
+      <div class="inputText flex flex-col items-center">
+          <span>Year</span>
+          <input class="text-center" type="text" maxlength="4" size="10" placeholder="YYYY" id="year">
+      </div>
+  </div>  
+        <div class="pt-12">
+          <button class="btn bg-blue-950 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded">Age</button>
+        </div>
+        <div class="answers flex flex-row gap-6 pt-6 text-48">
+          <p id="aYear">Years</p>
+          <p id="aMonth">Months</p>
+          <p id="aDay">Days</p>
+        </div>  
+        <p class="errorText pt-12"></p>
+    </div>
+  </body>
+    <script src="../scripts/ageCalc.js"></script>
+</html>
