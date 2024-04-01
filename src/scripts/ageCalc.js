@@ -13,7 +13,8 @@ function calculateAge() {
   const month = Number(monthInput.value);
   const year = Number(yearInput.value);
 
-  if (day >= 1 && day <= 31 && month >= 1 && month <= 12 < today.getTime()) {
+  // eslint-disable-next-line max-len
+  if (day >= 1 && day <= 31 && month >= 1 && month <= 12 && year <= today.getFullYear()) {
     // Calculate the birth date
     const birthdate = new Date(`${month}/${day}/${year}`);
 
