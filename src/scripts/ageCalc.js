@@ -15,8 +15,8 @@ function calculateAge() {
   const year = Number(yearInput.value);
 
   // eslint-disable-next-line max-len
-  if (day < 2 && month < 2 && year < 4) {
-    alert('Please update your date format to match DD/MM/YYY');
+  if (!dayInput.value.match(/^\d{2}$/) || !monthInput.value.match(/^\d{2}$/) || !yearInput.value.match(/^\d{4}$/)) {
+    alert('Please update your date format to match DD/MM/YYYY');
   } else if (day >= 1 && day <= 31 && month >= 1 && month <= 12 && year <= today.getFullYear()) {
     // Calculate the birth date
     const birthdate = new Date(`${month}/${day}/${year}`);
