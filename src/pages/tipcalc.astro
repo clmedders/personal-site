@@ -24,7 +24,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
             <p class="mb-0 mt-2">Select Tip %</p>
             <div class="grid grid-cols-2 gap-4">
               <button class="w-full h-12 text-white rounded-md bg-blue-950" id="five" data-percentage="5">5%</button>
-              <button class="w-full h-12 text-white rounded-md bg-blue-950" id="ten" data-percentage="10">10%</button>
+              <button class="w-full h-12 text-white rounded-md bg-blue-950" id="ten" data-percentage="10" value="10">10%</button>
               <button class="w-full h-12 text-white rounded-md bg-blue-950" id="fifteen" data-percentage="15">15%</button>
               <button class="w-full h-12 text-white rounded-md bg-blue-950" id="twenty" data-percentage="20">20%</button>
               <button class="w-full h-12 text-white rounded-md bg-blue-950" id="twenty" data-percentage="50">50%</button>
@@ -33,6 +33,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
           </div>
         <!-- </div> -->
 
+        <div class="bill w-9/12 py-4">
+          <p class="mb-0 mt-2">Number of People</p>
+          <input class="billSpilt text-right text-xl font-simibold text-blue-950 w-full px-4" type="number" id="spilt">
+        </div>
 
         <div class="tipTotal w-9/12 text-white rounded-md bg-blue-950 my-4">
           <div class="grid grid-cols-2 gap-4 pt-7 px-3">
