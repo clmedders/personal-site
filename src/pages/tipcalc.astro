@@ -17,7 +17,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         <!-- <div class="md:flex md:flex-col"> -->
           <div class="bill w-9/12 py-4">
             <p class="mb-0 mt-2">Bill</p>
-            <input class="moneyInput text-right text-xl font-simibold text-blue-950 w-full px-4" type="number" id="bill">
+            <input class="moneyInput text-right text-xl font-simibold text-blue-950 w-full px-4" type="tel" id="bill">
           </div>
   
           <div class="tipAmount w-9/12 py-4">
@@ -45,8 +45,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
             <p class="flex justify-center items-center mb-0">Total</p>
             <p class="flex justify-center items-center mb-0" id="total"></p>
           </div>
-
-          <button></button>
+          <button class="w-full h-12 text-blue-950 rounded-md bg-slate-200" onclick="location.reload()">Reset</button>
         </div>
 
       </div>
