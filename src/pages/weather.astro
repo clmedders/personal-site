@@ -1,0 +1,31 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+// import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+	<main>
+		<h1 class=" text-center">Check your weather</h1>
+    <div class=" flex flex-col justify-center space-y-4">
+      <button id="weather-btn" class=" bg-blue-950 text-white p-2 w-auto rounded-lg m-auto">Get Weather</button>
+			<!-- <div class="border-blue-950 border-4"> -->
+				<p id="weather-output" class=" m-auto text-center"></p>
+				<p id="current-temp" class=" m-auto text-center"></p>
+				<p id="high-temp" class=" m-auto text-center"></p>
+				<p id="low-temp" class=" m-auto text-center"></p>
+
+			</div>
+    </div>
+		</main>
+
+    <script src="../scripts/weather.js"></script>
+	</body>
+</html>
