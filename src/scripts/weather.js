@@ -17,8 +17,8 @@ function fetchWeather() {
             .then((forecastData) => {
                 const currentWeather = forecastData.properties.periods[0];
                 const currentTemp = currentWeather.temperature;
-                const highTemp = forecastData.properties.periods[1].temperature;
-                const lowTemp = forecastData.properties.periods[2].temperature;
+                const highTemp = forecastData.properties.periods[2].temperature;
+                const lowTemp = forecastData.properties.periods[1].temperature;
 
                 try {
                   document.getElementById("weather-output").innerHTML = `Conditions: ${currentWeather.shortForecast}`;
