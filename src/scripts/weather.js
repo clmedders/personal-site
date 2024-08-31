@@ -15,15 +15,14 @@ function fetchWeather() {
             fetch(forecastUrl)
             .then((response) => response.json())
             .then((forecastData) => {
+              console.log(forecastData);
                 const currentWeather = forecastData.properties.periods[0];
                 const currentTemp = currentWeather.temperature;
-                const highTemp = forecastData.properties.periods[2].temperature;
                 const lowTemp = forecastData.properties.periods[1].temperature;
 
                 try {
-                  document.getElementById("weather-output").innerHTML = `Conditions: ${currentWeather.shortForecast}`;
+                  document.getElementById("weather-output").innerHTML = `Forcast: ${currentWeather.detailedForecast}`;
                   document.getElementById("current-temp").innerHTML = `Current Temp: ${currentTemp}`;
-                  document.getElementById("high-temp").innerHTML = `High Temp: ${highTemp}`;
                   document.getElementById("low-temp").innerHTML = `Low Temp: ${lowTemp}`;
 
                   const element = document.getElementById("weather-container");
