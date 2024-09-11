@@ -9,7 +9,9 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint": "npx eslint --ext js,ts,tsx",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "watch": "sass --watch ./assets/sass/style.scss:./assets/output-css/style.css",
+    "sass": "sass ./assets/sass/style.scss:./assets/output-css/style.css"
   },
   "dependencies": {
     "@astrojs/mdx": "^1.1.5",
