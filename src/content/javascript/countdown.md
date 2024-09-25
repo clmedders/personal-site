@@ -1,19 +1,9 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-// import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+title: 'Count Down to Star Wars Day'
+heroImage: '/starwars.png'
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<h1 class="text-center">May 4th is...</h1>
+<h1 class="text-center">May 4th is...</h1>
 			<div class="px-4 mb-4">
 				<div class="flex flex-col md:flex-row justify-center w-full">
 					<div class="w-full md:w-1/4 p-4 text-center md:text-center">
@@ -36,6 +26,4 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			</div>
 			<h2 class="text-center">Away!</h2>
 		</main>
-    <script src="../scripts/countdown.js"></script>
-	</body>
-</html>
+    <script src="../../../scripts/countdown.js"></script>
