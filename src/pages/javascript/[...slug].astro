@@ -1,0 +1,21 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import JavaScriptPost from '../../layouts/JavaScriptPost.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('javascript');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+
+type Props = CollectionEntry<'javascript'>;
+
+const post: Props = Astro.props;
+const { Content } = await post.render();
+---
+
+<JavaScriptPost {...post.data}>
+  <Content />
+</JavaScriptPost>

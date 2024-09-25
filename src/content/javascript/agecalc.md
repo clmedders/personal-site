@@ -1,16 +1,8 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+title: 'Age Calculator'
+heroImage: '/agecalc.jpg'
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
   <div class="flex flex-col justify-center items-center pt-12">
 		<h1 class=" text-center">Check Your Age</h1>
     <div class="inputs flex gap-6">
@@ -37,6 +29,4 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         </div>  
         <p class="errorText pt-12"></p>
     </div>
-  </body>
-    <script src="../assets/scripts/ageCalc.js"></script>
-</html>
+      <script src="../../../scripts/ageCalc.js"></script>

@@ -1,0 +1,21 @@
+---
+title: 'Check The Weather'
+heroImage: '/weather.jpeg'
+---
+
+<h1 class=" text-center">Check your weather</h1>
+  <div class=" flex flex-col justify-center space-y-4">
+      <button id="weather-btn" class=" bg-blue-950 text-white p-2 w-auto rounded-lg m-auto">Get Weather</button>
+      <p id="loading-message" class="hidden m-auto text-center">Dont stess, calling the weather people now...</p>
+			<div id="weather-container" class="grid grid-cols-1 gap-4 p-4">
+				<div class="flex justify-center">
+					<p id="weather-output" class="text-center"></p>
+				</div>
+				<div class="flex justify-center">
+          <p id="current-temp" class="text-center mr-4"></p>
+					<p id="low-temp" class="text-center"></p>
+      </div>
+    </div>
+  </div>
+
+<script src="../../../scripts/weather.js"></script>

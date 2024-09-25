@@ -1,25 +1,15 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+title: 'Tip Calculator'
+heroImage: '/tips.webp'
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-    <h3 class="text-center my-5">Find out your tip</h3>
+<h3 class="text-center my-5">Find out your tip</h3>
       <div class="wrapper flex flex-col justify-center items-center m-5 rounded-lg max-w-xs mx-auto bg-slate-200">
-
         <!-- <div class="md:flex md:flex-col"> -->
           <div class="bill w-9/12 py-4">
             <p class="mb-0 mt-2">Bill</p>
             <input class="moneyInput text-right text-xl font-simibold text-blue-950 w-full px-4" type="number" id="bill">
           </div>
-  
           <div class="tipAmount w-9/12 py-4">
             <p class="mb-0 mt-2">Select Tip %</p>
             <div class="grid grid-cols-2 gap-4">
@@ -31,13 +21,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
               <input class="custTip w-full h-12 rounded-md text-right text-xl font-simibold text-blue-950 px-4" type="number" id="custTip" placeholder="Custom">
             </div>
           </div>
-        <!-- </div> -->
-
         <div class="bill w-9/12 py-4">
           <p class="mb-0 mt-2">Number of People</p>
           <input class="billSpilt text-right text-xl font-simibold text-blue-950 w-full px-4" type="number" id="spilt">
         </div>
-
         <div class="tipTotal w-9/12 text-white rounded-md bg-blue-950 my-4">
           <div class="grid grid-cols-2 gap-4 py-7 px-3">
             <p class="flex justify-center items-center mb-0">Tip Amount</p>
@@ -47,8 +34,5 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
             <button class="flex justify-center items-center mb-0 text-blue-950 rounded-md bg-slate-200" onclick="location.reload()">Reset</button>
           </div>
         </div>
-
       </div>
-  </body>
-    <script src="../assets/scripts/tipCalc.js"></script>
-</html>
+    <script src="../../../scripts/tipCalc.js"></script>
